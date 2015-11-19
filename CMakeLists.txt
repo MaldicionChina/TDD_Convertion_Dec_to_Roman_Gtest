@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.3)
+cmake_minimum_required(VERSION 2.8)
 project(TDD_Convertion_Dec_to_Roman_Gtest)
 
 # Enabling testing over project, it could be tested with.... make test
