@@ -4,8 +4,12 @@
 
 #include "gtest/gtest.h" // Google Test library to perform test
 #include "converter.hpp"
+#include <string>
 
 TEST(ConverterGeneralTest, OneToRoman) {
-// This test is named "Negative", and belongs to the "FactorialTest"
-// test case.
+
+    // Create object cv
+    Converter cv;
+
+    ASSERT_STREQ("I", cv.toRoman(1).c_str());
 }

@@ -10,9 +10,9 @@ set(SOURCE ${CMAKE_SOURCE_DIR}/src)
 set(TEST ${CMAKE_SOURCE_DIR}/test)
 set(GOOGLE_TEST ${CMAKE_SOURCE_DIR}/lib/gtest)
 
+# Specify the paths in which the linker should search for libraries
+# our case gtest libraries
 link_directories(${GOOGLE_TEST})
-
-
 
 ##########################################
 # Librarie's Header Included

@@ -4,5 +4,5 @@
 #include "converter.hpp"
 
 std::string Converter::toRoman(int naturalNumber){
-    return 0;
+    return "I";
 }
