@@ -9,7 +9,8 @@
 
 class Converter {
 private:
-    int number;
+    int numbers[7] = {1000,500,100,50,10,5,1};
+    std::string letters[7] = {"M","D","C","L","X","V","I"};
 public:
     std::string toRoman(int naturalNumber);
 };
