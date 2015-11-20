@@ -26,4 +26,6 @@ set_target_properties(libgtest PROPERTIES
 # I couldn't make it work with INTERFACE_INCLUDE_DIRECTORIES
 include_directories("${source_dir}/include")
 
+
+# Add and run CMakeLists.txt inside 'converterTest' folder
 add_subdirectory(converterTest)

@@ -39,6 +39,7 @@ link_directories(${GOOGLE_TEST})
 # Build test
 ##########################################
 
+    # Add and run CMakeLists.txt inside 'test' folder
     add_subdirectory(test)
 
 ##########################################
