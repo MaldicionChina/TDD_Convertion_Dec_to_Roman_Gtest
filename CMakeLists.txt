@@ -34,34 +34,12 @@ link_directories(${GOOGLE_TEST})
             SHARED ${SOURCE}/converter.cpp
     )
 
+
 ##########################################
 # Build test
 ##########################################
 
-    set(
-            converterTestSrc
-            ${TEST}/main_test.cpp
-            ${TEST}/converterTest.cpp
-    )
-
-    add_executable(
-            converterTest
-            ${converterTestSrc}
-    )
-
-    target_link_libraries(
-            converterTest
-            converter
-            gtest
-            pthread
-    )
-
-    # Add testing to the project
-    add_test(
-            NAME converterTest
-            COMMAND converterTest
-    )
-
+    add_subdirectory(test)
 
 ##########################################
 # Build main program
