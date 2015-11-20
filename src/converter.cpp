@@ -9,30 +9,15 @@ std::string Converter::toRoman(int naturalNumber){
     int residue = 0;
     std::string resultRoman = ""; // Store parcial result to apply module operator: naturalNumber
 
-    if(naturalNumber >= 1){
+    // Verify number
+    if( ( naturalNumber >= 1) and (naturalNumber <=1000)){
 
-        switch (naturalNumber){
-            case 1:
-                resultRoman = "I";
-                break;
-            case 5:
-                resultRoman = "V";
-                break;
-            case 10:
-                resultRoman = "X";
-                break;
-            case 50:
-                resultRoman = "L";
-                break;
-            case 100:
-                resultRoman = "C";
-                break;
-            case 500:
-                resultRoman = "D";
-                break;
-            case 1000:
-                resultRoman = "M";
-                break;
+        for (int i = 0; i < totalNumbers; ++i) {
+
+            while(naturalNumber >= numbers[i]){
+                naturalNumber = naturalNumber - numbers[i];
+                resultRoman.append(letters[i]);
+            }
         }
 
     }else{
