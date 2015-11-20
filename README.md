@@ -14,5 +14,5 @@ cmake .. ; make
 ##### Inside 'build' folder run 
 
 ``` 
-make test 
+/test/converterTest/converterTest
 ``` 
